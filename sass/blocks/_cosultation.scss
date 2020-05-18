@@ -1,0 +1,26 @@
+.consultation{
+    position: relative;
+    padding: 100px 0 92px 0;/* 
+    background: url('../img/consultation-bg.png') center (center/cover) no-repeat; */
+    &__title {
+        color: #000000;
+        counter-reset: #ebebeb;
+        font-size: 3em;
+        font-weight: normal;
+        text-align: left;
+        text-transform: uppercase;
+        line-height: 54px;
+    }
+    &__descr{
+        margin-top: 20px;
+        color: #000000;
+        font-size: 20px; 
+        font-weight: 500;
+    }
+    img {
+        position: absolute;
+        right: 13%;
+        top: 13%;
+        z-index: -1;
+    }
+}

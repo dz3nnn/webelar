@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webelar</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/fm.revealator.jquery.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body class="">
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            var $preloader = $('#page-preloader'),
+                $loader   = $preloader.find('.loader');
+            $loader.fadeOut(3000);
+            $preloader.delay(350).fadeOut(2000);
+        });
+    </script>
+    <div id="page-preloader" class='preloader'>
+        <div id="cube-loader" class="loader">
+            <div class="caption">
+              <div class="cube-loader">
+                <div class="cube loader-1"></div>
+                <div class="cube loader-2"></div>
+                <div class="cube loader-4"></div>
+                <div class="cube loader-3"></div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <noscript>
+        <style>
+            html, body { opacity: 1 !important; }
+            .preloader, .loader { display: none !important; }
+        </style>
+    </noscript>
+    <header>
+        <nav id="menu">
+            <input type="checkbox" id="checkbox-menu">
+            <label for="checkbox-menu">
+                <ul class="menu touch">
+                    <div class="logo-block">
+                    <li><a class="logo" href="index.html"><span class="ampher">&</span>Webelar</a></li>
+                    </div>
+                    <div class="menu-block">
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#locate">Услуги</a></li>
+                    <li><a href="#locate">Почему мы?</a></li>
+                    <li><a href="#locate">Наши проекты</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    </div>
+                </ul>
+                <span class="toggle">☰</span>
+            </label>
+        </nav>
+    </header>
+    <div class="promo">
+        <div class="container demo">
+            <div class="content">
+                <div id="large-header" class="large-header">
+                  <canvas id="demo-canvas"></canvas>
+                    <div class="main-title">
+                        <div class="bill">
+                        </div>
+                        <h1>Если Вашего бизнеса нет в Интернете, то Вас нет в бизнесе!</h1>
+                    </div>
+                  <!-- <h1 class="main-title"><span class="thin">Explore</span> Space</h1> -->
+               </div>
+            </div>
+        </div>
+    </div>
+    <div class="about wrapper">
+        <div class="logo revealator-zoomin revealator-once">
+            <span><span class="ampher">&</span>Webelar</span>
+        </div>
+        <div class="about-text">
+            <div class="text revealator-zoomin revealator-once">
+                Webelar – это молодая компания со свежими идеями!  Мы изучаем потребности и составляем персональную программу для наших клиентов, а так же составляем план продвижения в сети, выполняем весь спектр задач, направленных на достижение успеха наших клиентов. Выбрав нас вы уже на пути успеха, ведь скоро вы будете пожинать плоды прибыли!
+            </div>
+            <div class="laptop-img revealator-zoomin revealator-once">
+                <img src="img/we.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="services wrapper">
+        <div class="title revealator-zoomin revealator-once">Какие услуги мы предлагаем?</div>
+        <div class="products">
+            <div class="product revealator-zoomin revealator-once">
+                <div class="img">
+                    <img src="img/landing.png" alt="">
+                </div>
+                <div class="description">
+                    <h3>Landing Page</h3>
+                    <p>Веб-страница задачами которой являются увеличение аудитории, усиление эффективности рекламы...</p>
+                </div>
+                <div class="more-info">
+                    <a class="landing-page-link hover-btn" href=""><span>Подробнее</span></a>
+                </div>
+            </div>
+            <div class="product revealator-zoomin revealator-delay1 revealator-once">
+                <div class="img">
+                    <img src="img/online-shop.png" alt="">
+                </div>
+                <div class="description">
+                    <h3>Онлайн магазин</h3>
+                    <p>Сайт позволяющий пользователям онлайн формировать заказ на покупку и оплатить заказ...</p>
+                </div>
+                <div class="more-info">
+                    <a class="online-shop-link hover-btn" href=""><span>Подробнее</span></a>
+                </div>
+            </div>
+            <div class="product revealator-zoomin revealator-delay2 revealator-once">
+                <div class="img">
+                    <img src="img/corporate.png" alt="">
+                </div>
+                <div class="description">
+                    <h3>Корпоративный сайт</h3>
+                    <p>сайт необходимый для того, чтобы рассказать о компании, а так же, чтобы наглядно продемонстрировать...</p>
+                </div>
+                <div class="more-info">
+                    <a class="corporate-link hover-btn" href=""><span>Подробнее</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="consultation wrapper">
+           <h2 class="consultation__title">
+            Получите бесплатную консультацию<br>
+            для вашего бизнеса
+           </h2> 
+           <div class="consultation__descr">
+                Просто заполните форму заявки<br>
+                и мы перезвоним вам в течении 10 минут
+           </div>
+           <form class="feed-form" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон" >
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+                <button class="button button_submit">Заказать консультацию</button>
+                
+            </form>
+            <img src="img/cons.png" alt="consultation">
+    </div>
+    <div class="advantages wrapper">
+        <div class="title revealator-zoomin revealator-once">Почему мы?</div>
+        <div class="swiper-container revealator-zoomin revealator-once">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><i class="fas fa-comments" style="color: rgb(0, 119, 255);"></i><h3>Удобная коммуникация</h3></div>
+                <div class="swiper-slide"><i class="fas fa-hands-helping" style="color: orange;"></i><h3>Дальнейшее сопровождение</h3></div>
+                <div class="swiper-slide"><i class="fas fa-user-astronaut" style="color: rgb(0, 96, 206);"></i><h3>Новейшие технологии</h3></div>
+                <div class="swiper-slide"><i class="fas fa-money-bill-alt" style="color: green;"></i><h3>Низкие цены</h3></div>
+                <div class="swiper-slide"><i class="fas fa-shield-alt" style="color: orange;"></i><h3>Высокое качество</h3></div>
+                <div class="swiper-slide"><i class="fas fa-phone-square-alt" style="color: green;"></i><h3>Круглосуточная связь</h3></div>
+              <div class="swiper-slide"><i class="far fa-clock"></i><h3>Минимальные сроки</h3></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="jobs wrapper revealator-zoomin revealator-once">
+        <div class="title">
+            Наши работы
+        </div>
+        <div class="jobs-images">
+            <a href="" class="job" id="filei">
+                    <div class="filter">
+                        <div class="job-text">
+                            <h4>Name</h4>
+                            <p>description</p>
+                        </div>
+                    </div>
+            </a>
+            <a href="" class="job" id="stenapol">
+                    <div class="filter">
+                        <div class="job-text">
+                            <h4>Name</h4>
+                            <p>description</p>
+                        </div>
+                    </div>
+            </a>
+            <a href="" class="job" id="magi">
+                    <div class="filter">
+                        <div class="job-text">
+                            <h4>Name</h4>
+                            <p>description</p>
+                        </div>
+                    </div>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer revealator-zoomin revealator-once">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="links">
+                <li><a class="logo" href="index.html"><span class="ampher">&</span>Webelar</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#locate">Услуги</a></li>
+                <li><a href="#locate">Почему мы?</a></li>
+                <li><a href="#locate">Наши проекты</a></li>
+            </div>
+            <div class="social">
+                <a href=""><img src="img/instagram.png" alt="">@webelar</a>
+                <a href=""><img src="img/gmail.png" alt="">webelar@gmail.com</a>
+                <a href=""><img src="img/telegram.png" alt=""></i>@vi_du</a>
+            </div>
+        </div>
+    </footer>
+    <!-- contact form -->
+    <div class="form" style="display: none;">
+        <form action="mail.php" method="POST">
+            <input type="text" name="name">
+            <input type="text" name="email">
+            <input type="text" name="phone">
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="GO">
+        </form>
+    </div>
+
+    <!-- landing page modal -->
+    <div class="popup-fade" id="modal-landing-page">
+        <div class="popup">
+            <div class="modal-header">
+                <div class="title"><h3>Landing Page</h3></div>
+                <div class="close"><a class="popup-close" href="#"><i class="fas fa-times"></i></a></div>
+            </div>
+            <div class="modal-img">
+                <img src="img/landing.png" alt="">
+            </div>
+            <div class="modal-text">
+                <p>Landing Page - веб-страница задачами которой являются увеличение аудитории, усиление эффективности рекламы и сбор контактных данных целевой аудитории. Целевая страница обычно содержит информацию о товаре или услуге. Главной задачей таких страниц является конвертация посетителя в покупателя или клиента компании.</p>
+            </div>
+            <div class="write-message">
+                <a class="" href="">Написать сообщение</a>
+            </div>
+        </div>		
+    </div>
+
+    <!-- Online shop modal -->
+    <div class="popup-fade" id="modal-online-shop">
+        <div class="popup">
+            <div class="modal-header">
+                <div class="title"><h3>Онлайн магазин</h3></div>
+                <div class="close"><a class="popup-close" href="#"><i class="fas fa-times"></i></a></div>
+            </div>
+            <div class="modal-img">
+                <img src="img/online-shop.png" alt="">
+            </div>
+            <div class="modal-text">
+                <p>Онлайн магазин - сайт позволяющий пользователям онлайн формировать заказ на покупку и оплатить заказ. Главной задачей таких сайтов является продажа товара покупателю. </p>
+            </div>
+            <div class="write-message">
+                <a class="" href="">Написать сообщение</a>
+            </div>
+        </div>		
+    </div>
+
+    <!-- modal corporate site -->
+    <div class="popup-fade" id="modal-corporate">
+        <div class="popup">
+            <div class="modal-header">
+                <div class="title"><h3>Корпоративный сайт</h3></div>
+                <div class="close"><a class="popup-close" href="#"><i class="fas fa-times"></i></a></div>
+            </div>
+            <div class="modal-img">
+                <img src="img/corporate.png" alt="">
+            </div>
+            <div class="modal-text">
+                <p>Корпоративный сайт  - сайт необходимый для того, чтобы рассказать о компании, а так же, чтобы наглядно продемонстрировать продаваемые товары или услуги. Если речь идёт о продаже какой-то продукции, то на подобной площадке размещают каталог этой продукции. Целью корпоративного сайта не является продажа как таковая. Это не интернет-магазин. Основная задача состоит в том, чтобы посетитель оставил заявку, позвонил или лично приехал в офис компании.</p>
+            </div>
+            <div class="write-message">
+                <a class="" href="">Написать сообщение</a>
+            </div>
+        </div>		
+    </div>
+
+    <script type="text/javascript">
+        jQuery(".job").mouseover(function() {
+            jQuery(this).find(".filter").fadeIn().css('display', 'flex');
+        });
+        jQuery(".job").mouseleave(function() {
+            jQuery(this).find(".filter").fadeOut();
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/b8c5f825e0.js" crossorigin="anonymous"></script>
+    <script src="js/fm.revealator.jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/TweenLite.js"></script>
+    <script src="js/EasePack.js"></script>
+    <script src="js/Anim.js"></script>
+    <script src="js/script.js"></script>    
+    <script src="js/scroll.js"></script>
+    <script src="js/smoothscroll.js"></script>
+</body>
+</html>
