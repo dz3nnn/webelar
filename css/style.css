@@ -690,14 +690,10 @@ footer .footer .social a img {
     margin-right: 0px;
   }
 }
-.popup-fade {
+#modal-landing-page, #modal-online-shop, #modal-corporate {
   display: none;
-}
-.popup-fade:before {
-  display: flex;
   justify-content: center;
   align-items: center;
-  content: "";
   background: rgba(0, 0, 0, 0.5);
   position: fixed;
   left: 0;
@@ -708,41 +704,36 @@ footer .footer .social a img {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
 }
-.popup-fade .popup {
+#modal-landing-page .popup, #modal-online-shop .popup, #modal-corporate .popup {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: fixed;
-  top: 10%;
-  left: 50%;
-  margin-left: -240px;
   padding: 20px;
   width: 400px;
   background: #fff;
   z-index: 99999;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
   opacity: 1;
 }
-.popup-fade .popup .modal-header {
+#modal-landing-page .popup .modal-header, #modal-online-shop .popup .modal-header, #modal-corporate .popup .modal-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.popup-fade .popup .modal-header .title {
+#modal-landing-page .popup .modal-header .title, #modal-online-shop .popup .modal-header .title, #modal-corporate .popup .modal-header .title {
   display: flex;
 }
-.popup-fade .popup .modal-header .title h3 {
+#modal-landing-page .popup .modal-header .title h3, #modal-online-shop .popup .modal-header .title h3, #modal-corporate .popup .modal-header .title h3 {
   font-size: 2em;
   font-weight: normal;
 }
-.popup-fade .popup .modal-header .popup-close {
+#modal-landing-page .popup .modal-header .popup-close, #modal-online-shop .popup .modal-header .popup-close, #modal-corporate .popup .modal-header .popup-close {
   position: absolute;
   top: 10px;
   right: 10px;
 }
-.popup-fade .popup .modal-header .popup-close i {
+#modal-landing-page .popup .modal-header .popup-close i, #modal-online-shop .popup .modal-header .popup-close i, #modal-corporate .popup .modal-header .popup-close i {
   font-size: 1.3em;
   color: #616161a6;
   transition: all 0.2s linear;
@@ -751,7 +742,7 @@ footer .footer .social a img {
   -ms-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
 }
-.popup-fade .popup .modal-header .popup-close i:hover {
+#modal-landing-page .popup .modal-header .popup-close i:hover, #modal-online-shop .popup .modal-header .popup-close i:hover, #modal-corporate .popup .modal-header .popup-close i:hover {
   color: #262626;
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
@@ -759,26 +750,26 @@ footer .footer .social a img {
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
 }
-.popup-fade .popup .modal-img {
+#modal-landing-page .popup .modal-img, #modal-online-shop .popup .modal-img, #modal-corporate .popup .modal-img {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   margin-top: 10px;
 }
-.popup-fade .popup .modal-img img {
+#modal-landing-page .popup .modal-img img, #modal-online-shop .popup .modal-img img, #modal-corporate .popup .modal-img img {
   height: 200px;
 }
-.popup-fade .popup .modal-text {
+#modal-landing-page .popup .modal-text, #modal-online-shop .popup .modal-text, #modal-corporate .popup .modal-text {
   display: flex;
   margin-top: 10px;
 }
-.popup-fade .popup .write-message {
+#modal-landing-page .popup .write-message, #modal-online-shop .popup .write-message, #modal-corporate .popup .write-message {
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
-.popup-fade .popup .write-message a {
+#modal-landing-page .popup .write-message a, #modal-online-shop .popup .write-message a, #modal-corporate .popup .write-message a {
   text-decoration: none;
   color: #262626;
   border: 1px solid #262626;
@@ -794,39 +785,35 @@ footer .footer .social a img {
   -ms-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
 }
-.popup-fade .popup .write-message a:hover {
+#modal-landing-page .popup .write-message a:hover, #modal-online-shop .popup .write-message a:hover, #modal-corporate .popup .write-message a:hover {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 460px) {
-  .popup-fade .popup {
+  #modal-landing-page .popup, #modal-online-shop .popup, #modal-corporate .popup {
     width: 300px;
-    top: 1%;
-    transform: translateX(20%);
   }
-  .popup-fade .popup .modal-header {
+  #modal-landing-page .popup .modal-header, #modal-online-shop .popup .modal-header, #modal-corporate .popup .modal-header {
     text-align: center;
     font-size: 14px;
   }
-  .popup-fade .popup .modal-text {
+  #modal-landing-page .popup .modal-text, #modal-online-shop .popup .modal-text, #modal-corporate .popup .modal-text {
     font-size: 14px;
   }
 }
 @media (max-width: 360px) {
-  .popup-fade .popup {
+  #modal-landing-page .popup, #modal-online-shop .popup, #modal-corporate .popup {
     width: 270px;
-    top: 1%;
-    transform: translateX(27%);
   }
-  .popup-fade .popup .modal-header {
+  #modal-landing-page .popup .modal-header, #modal-online-shop .popup .modal-header, #modal-corporate .popup .modal-header {
     text-align: center;
     font-size: 14px;
   }
-  .popup-fade .popup .modal-img img {
+  #modal-landing-page .popup .modal-img img, #modal-online-shop .popup .modal-img img, #modal-corporate .popup .modal-img img {
     width: 50%;
     height: 50%;
   }
-  .popup-fade .popup .modal-text {
+  #modal-landing-page .popup .modal-text, #modal-online-shop .popup .modal-text, #modal-corporate .popup .modal-text {
     font-size: 14px;
   }
 }

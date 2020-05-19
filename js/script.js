@@ -19,17 +19,17 @@ var swiper = new Swiper('.swiper-container', {
 
 $(document).ready(function($) {
     $('.landing-page-link').click(function() {
-        $('#modal-landing-page').fadeIn();
+        $('#modal-landing-page').fadeIn().css('display', 'flex');
         return false;
     });	
 
     $('.online-shop-link').click(function() {
-        $('#modal-online-shop').fadeIn();
+        $('#modal-online-shop').fadeIn().css('display', 'flex');
         return false;
     });
 
     $('.corporate-link').click(function() {
-        $('#modal-corporate').fadeIn();
+        $('#modal-corporate').fadeIn().css('display', 'flex');
         return false;
     });	
     

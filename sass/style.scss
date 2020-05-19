@@ -718,35 +718,27 @@ footer{
     }
 }
 
-.popup-fade {
+#modal-landing-page, #modal-online-shop, #modal-corporate {
     display: none;
-    &:before {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        content: '';
-        background: rgba(0, 0, 0, 0.5);
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 9999;
-        backdrop-filter: blur(5px);
-    }
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    backdrop-filter: blur(5px);
     .popup {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         position: fixed;
-        top: 10%;
-        left: 50%;
-        margin-left: -240px;
         padding: 20px;
         width: 400px;	
         background: #fff;
         z-index: 99999;
-        backdrop-filter: blur(10px);
         opacity: 1;	
         .modal-header{
             display: flex;
@@ -824,11 +816,9 @@ footer{
     }
 }
 @media (max-width: 460px){
-    .popup-fade {
+    #modal-landing-page, #modal-online-shop, #modal-corporate {
         .popup {
             width: 300px;
-            top: 1%;
-            transform:translateX(20%);
             .modal-header {
                 text-align: center;
                 font-size: 14px;
@@ -840,11 +830,9 @@ footer{
     }
 }
 @media (max-width: 360px){
-    .popup-fade {
+    #modal-landing-page, #modal-online-shop, #modal-corporate {
         .popup {
             width: 270px;
-            top: 1%;
-            transform:translateX(27%);
             .modal-header {
                 text-align: center;
                 font-size: 14px;
