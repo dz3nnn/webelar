@@ -32,7 +32,11 @@ $(document).ready(function($) {
         $('#modal-corporate').fadeIn().css('display', 'flex');
         return false;
     });	
-    
+
+    $('.modal-window-button').click(function() {
+        $('.popup-fade').fadeOut();
+    });	
+
     $('.popup-close').click(function() {
         $(this).parents('.popup-fade').fadeOut();
         return false;
