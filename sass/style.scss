@@ -827,7 +827,6 @@ footer{
     .popup-fade {
         .popup {
             width: 300px;
-            height: 90%;
             top: 1%;
             transform:translateX(20%);
             .modal-header {
@@ -844,7 +843,6 @@ footer{
     .popup-fade {
         .popup {
             width: 270px;
-            height: 90%;
             top: 1%;
             transform:translateX(27%);
             .modal-header {
@@ -863,13 +861,6 @@ footer{
         }
     }
 }
-body {
-    transition: 0.5s all;
-}
-/* .body_black {
-    background-color: #262626;
-    color: #fff;
-} */
 @import 'blocks/button';
 @import 'blocks/cosultation';
 @import 'blocks/forms';
