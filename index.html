@@ -57,7 +57,7 @@
             </label>
         </nav>
     </header>
-    <div class="promo">
+    <!-- <div class="promo">
         <div class="container demo">
             <div class="content">
                 <div id="large-header" class="large-header">
@@ -67,8 +67,23 @@
                         </div>
                         <h1>Если Вашего бизнеса нет в Интернете, то Вас нет в бизнесе!</h1>
                     </div>
-                  <!-- <h1 class="main-title"><span class="thin">Explore</span> Space</h1> -->
+                  <h1 class="main-title"><span class="thin">Explore</span> Space</h1>
                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="main-block wrapper">
+        <div class="text">
+            <h1>Хочешь увеличить свою прибыль?<br>
+                <span id="typing"></span>
+            </h1>
+        </div>
+        <div class="world-view">
+            <div class="view-modal">
+                <a href="">Закажи обратный звонок</a>
+            </div>
+            <div class="world-img">
+                <img src="img/world_map.png" alt="">
             </div>
         </div>
     </div>
@@ -285,6 +300,20 @@
         });
         jQuery(".job").mouseleave(function() {
             jQuery(this).find(".filter").fadeOut();
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
+    <script>
+        $(function(){
+            $("#typing").typed({
+                strings: [" Разработай веб-сайт", " Закажи продвижение", " Сделай рекламу"],
+                typeSpeed: 70,
+                backDelay: 1500,
+                startDelay: 2500,
+                loop: true,
+                loopCount: 2,
+                contentType: 'html',      
+            });
         });
     </script>
     <script src="https://kit.fontawesome.com/b8c5f825e0.js" crossorigin="anonymous"></script>

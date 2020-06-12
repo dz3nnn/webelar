@@ -208,6 +208,55 @@ ul.menu .menu-block li a:hover {
     top: 40%;
   }
 }
+.main-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.main-block .text {
+  display: flex;
+  justify-content: flex-start;
+}
+.main-block .text h1 {
+  color: #262626;
+  font-weight: normal;
+  font-size: 60px;
+}
+.main-block .text h1 span#typing {
+  font-size: 50px;
+  border-bottom: 2px solid #262626;
+}
+.main-block .world-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-block .world-view .world-img {
+  display: flex;
+  justify-content: center;
+}
+.main-block .world-view .world-img img {
+  height: 400px;
+}
+.main-block .world-view .view-modal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-block .world-view .view-modal a {
+  color: #262626;
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #262626;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
 .about {
   display: flex;
   flex-direction: column;
