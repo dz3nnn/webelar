@@ -18,6 +18,11 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 $(document).ready(function($) {
+    $('.consult-link').click(function() {
+        $('#modal-consult').fadeIn().css('display', 'flex');
+        return false;
+    });
+
     $('.landing-page-link').click(function() {
         $('#modal-landing-page').fadeIn().css('display', 'flex');
         return false;

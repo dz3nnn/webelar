@@ -241,20 +241,33 @@ ul.menu .menu-block li a:hover {
 }
 .main-block .world-view .view-modal {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .main-block .world-view .view-modal a {
-  color: #262626;
   text-decoration: none;
-  padding: 10px 20px 10px 20px;
+  color: #262626;
   border: 1px solid #262626;
+  padding: 10px 20px 10px 20px;
+  min-width: 183px;
+  text-align: center;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.main-block .world-view .view-modal a:nth-child(2) {
+  margin-top: 20px;
+}
+.main-block .world-view .view-modal a:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
 
 .about {
@@ -739,7 +752,7 @@ footer .footer .social a img {
     margin-right: 0px;
   }
 }
-#modal-landing-page, #modal-online-shop, #modal-corporate {
+#modal-landing-page, #modal-online-shop, #modal-corporate, #modal-consult {
   display: none;
   justify-content: center;
   align-items: center;
@@ -753,7 +766,7 @@ footer .footer .social a img {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
 }
-#modal-landing-page .popup, #modal-online-shop .popup, #modal-corporate .popup {
+#modal-landing-page .popup, #modal-online-shop .popup, #modal-corporate .popup, #modal-consult .popup {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -764,25 +777,25 @@ footer .footer .social a img {
   z-index: 99999;
   opacity: 1;
 }
-#modal-landing-page .popup .modal-header, #modal-online-shop .popup .modal-header, #modal-corporate .popup .modal-header {
+#modal-landing-page .popup .modal-header, #modal-online-shop .popup .modal-header, #modal-corporate .popup .modal-header, #modal-consult .popup .modal-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-#modal-landing-page .popup .modal-header .title, #modal-online-shop .popup .modal-header .title, #modal-corporate .popup .modal-header .title {
+#modal-landing-page .popup .modal-header .title, #modal-online-shop .popup .modal-header .title, #modal-corporate .popup .modal-header .title, #modal-consult .popup .modal-header .title {
   display: flex;
 }
-#modal-landing-page .popup .modal-header .title h3, #modal-online-shop .popup .modal-header .title h3, #modal-corporate .popup .modal-header .title h3 {
+#modal-landing-page .popup .modal-header .title h3, #modal-online-shop .popup .modal-header .title h3, #modal-corporate .popup .modal-header .title h3, #modal-consult .popup .modal-header .title h3 {
   font-size: 2em;
   font-weight: normal;
 }
-#modal-landing-page .popup .modal-header .popup-close, #modal-online-shop .popup .modal-header .popup-close, #modal-corporate .popup .modal-header .popup-close {
+#modal-landing-page .popup .modal-header .popup-close, #modal-online-shop .popup .modal-header .popup-close, #modal-corporate .popup .modal-header .popup-close, #modal-consult .popup .modal-header .popup-close {
   position: absolute;
   top: 10px;
   right: 10px;
 }
-#modal-landing-page .popup .modal-header .popup-close i, #modal-online-shop .popup .modal-header .popup-close i, #modal-corporate .popup .modal-header .popup-close i {
+#modal-landing-page .popup .modal-header .popup-close i, #modal-online-shop .popup .modal-header .popup-close i, #modal-corporate .popup .modal-header .popup-close i, #modal-consult .popup .modal-header .popup-close i {
   font-size: 1.3em;
   color: #616161a6;
   transition: all 0.2s linear;
@@ -791,7 +804,7 @@ footer .footer .social a img {
   -ms-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
 }
-#modal-landing-page .popup .modal-header .popup-close i:hover, #modal-online-shop .popup .modal-header .popup-close i:hover, #modal-corporate .popup .modal-header .popup-close i:hover {
+#modal-landing-page .popup .modal-header .popup-close i:hover, #modal-online-shop .popup .modal-header .popup-close i:hover, #modal-corporate .popup .modal-header .popup-close i:hover, #modal-consult .popup .modal-header .popup-close i:hover {
   color: #262626;
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
@@ -799,26 +812,26 @@ footer .footer .social a img {
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
 }
-#modal-landing-page .popup .modal-img, #modal-online-shop .popup .modal-img, #modal-corporate .popup .modal-img {
+#modal-landing-page .popup .modal-img, #modal-online-shop .popup .modal-img, #modal-corporate .popup .modal-img, #modal-consult .popup .modal-img {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   margin-top: 10px;
 }
-#modal-landing-page .popup .modal-img img, #modal-online-shop .popup .modal-img img, #modal-corporate .popup .modal-img img {
+#modal-landing-page .popup .modal-img img, #modal-online-shop .popup .modal-img img, #modal-corporate .popup .modal-img img, #modal-consult .popup .modal-img img {
   height: 200px;
 }
-#modal-landing-page .popup .modal-text, #modal-online-shop .popup .modal-text, #modal-corporate .popup .modal-text {
+#modal-landing-page .popup .modal-text, #modal-online-shop .popup .modal-text, #modal-corporate .popup .modal-text, #modal-consult .popup .modal-text {
   display: flex;
   margin-top: 10px;
 }
-#modal-landing-page .popup .write-message, #modal-online-shop .popup .write-message, #modal-corporate .popup .write-message {
+#modal-landing-page .popup .write-message, #modal-online-shop .popup .write-message, #modal-corporate .popup .write-message, #modal-consult .popup .write-message {
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
-#modal-landing-page .popup .write-message a, #modal-online-shop .popup .write-message a, #modal-corporate .popup .write-message a {
+#modal-landing-page .popup .write-message a, #modal-online-shop .popup .write-message a, #modal-corporate .popup .write-message a, #modal-consult .popup .write-message a {
   text-decoration: none;
   color: #262626;
   border: 1px solid #262626;
@@ -834,8 +847,17 @@ footer .footer .social a img {
   -ms-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
 }
-#modal-landing-page .popup .write-message a:hover, #modal-online-shop .popup .write-message a:hover, #modal-corporate .popup .write-message a:hover {
+#modal-landing-page .popup .write-message a:hover, #modal-online-shop .popup .write-message a:hover, #modal-corporate .popup .write-message a:hover, #modal-consult .popup .write-message a:hover {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+#modal-landing-page .popup .form, #modal-online-shop .popup .form, #modal-corporate .popup .form, #modal-consult .popup .form {
+  display: flex;
+  justify-content: center;
+}
+#modal-landing-page .popup .form form, #modal-online-shop .popup .form form, #modal-corporate .popup .form form, #modal-consult .popup .form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media (max-width: 460px) {
@@ -928,7 +950,6 @@ footer .footer .social a img {
   margin-top: 26px;
   display: flex;
   flex-direction: column;
-  width: 300px;
 }
 .feed-form_mt25 {
   margin-top: 25px;

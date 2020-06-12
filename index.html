@@ -74,13 +74,14 @@
     </div> -->
     <div class="main-block wrapper">
         <div class="text">
-            <h1>Хочешь увеличить свою прибыль?<br>
-                <span id="typing"></span>
+            <h1>Хотите увеличить свою прибыль?<br>
+                Мы <span id="typing"></span>
             </h1>
         </div>
         <div class="world-view">
             <div class="view-modal">
-                <a href="">Закажи обратный звонок</a>
+                <a class="consult-link hover-btn" href="">Получить консультацию</a>
+                <a class="hover-btn" href="">Позвонить</a>
             </div>
             <div class="world-img">
                 <img src="img/world_map.png" alt="">
@@ -146,16 +147,15 @@
             Получите бесплатную консультацию<br>
             для вашего бизнеса
            </h2> 
-           <div class="consultation__descr">
+            <div class="consultation__descr">
                 Просто заполните форму заявки<br>
                 и мы перезвоним вам в течении 10 минут
-           </div>
-           <form class="feed-form" action="./mail.php">
+            </div>
+            <form class="feed-form" action="./mail.php">
                 <input name="name" required placeholder="Ваше имя" type="text">
                 <input name="phone" required placeholder="Ваш телефон" >
                 <input name="email" required placeholder="Ваш E-mail" type="email">
                 <button type="submit" class="button button_submit">Заказать консультацию</button>
-                
             </form>
             <img src="img/cons.png" alt="consultation">
     </div>
@@ -294,6 +294,34 @@
         </div>		
     </div>
 
+
+    <!-- modal corporate site -->
+    <div class="popup-fade" id="modal-consult">
+        <div class="popup">
+            <div class="modal-header">
+                <div class="title"><h3>Бесплатная консультация</h3></div>
+                <div class="close"><a class="popup-close" href="#"><i class="fas fa-times"></i></a></div>
+            </div>
+            <div class="form">
+                <form class="feed-form" action="./mail.php">
+                    <input name="name" required placeholder="Ваше имя" type="text">
+                    <input name="phone" required placeholder="Ваш телефон" >
+                    <input name="email" required placeholder="Ваш E-mail" type="email">
+                    <button type="submit" class="button button_submit">Заказать консультацию</button>
+                </form>
+            </div>
+            <!-- <div class="modal-img">
+                <img src="img/corporate.png" alt="">
+            </div>
+            <div class="modal-text">
+                <p>Корпоративный сайт  - сайт необходимый для того, чтобы рассказать о компании, а так же, чтобы наглядно продемонстрировать продаваемые товары или услуги. Если речь идёт о продаже какой-то продукции, то на подобной площадке размещают каталог этой продукции. Целью корпоративного сайта не является продажа как таковая. Это не интернет-магазин. Основная задача состоит в том, чтобы посетитель оставил заявку, позвонил или лично приехал в офис компании.</p>
+            </div>
+            <div class="write-message">
+                <a class="modal-window-button" href="#contact-form">Отправить</a>
+            </div> -->
+        </div>		
+    </div>
+
     <script type="text/javascript">
         jQuery(".job").mouseover(function() {
             jQuery(this).find(".filter").fadeIn().css('display', 'flex');
@@ -306,7 +334,7 @@
     <script>
         $(function(){
             $("#typing").typed({
-                strings: [" Разработай веб-сайт", " Закажи продвижение", " Сделай рекламу"],
+                strings: [" разработаем веб-сайт", " сделаем продвижение", " настроим рекламу"],
                 typeSpeed: 70,
                 backDelay: 1500,
                 startDelay: 2500,
