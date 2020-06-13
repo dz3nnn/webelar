@@ -18,10 +18,14 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 $(document).ready(function($) {
-    // $('.consult-link').click(function() {
-    //     $('#modal-consult').fadeIn().css('display', 'flex');
-    //     return false;
-    // });
+    
+    jQuery(".job").mouseover(function() {
+        jQuery(this).find(".filter").fadeIn().css('display', 'flex');
+    });
+
+    jQuery(".job").mouseleave(function() {
+        jQuery(this).find(".filter").fadeOut();
+    });
 
     $('.landing-page-link').click(function() {
         $('#modal-landing-page').fadeIn().css('display', 'flex');
@@ -46,7 +50,6 @@ $(document).ready(function($) {
         $(this).parents('.popup-fade').fadeOut();
         return false;
     });		
- 
     $(document).keydown(function(e) {
         if (e.keyCode === 27) {
             e.stopPropagation();
