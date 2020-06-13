@@ -221,11 +221,11 @@ ul.menu .menu-block li a:hover {
 .main-block .text h1 {
   color: #262626;
   font-weight: normal;
-  font-size: 60px;
+  font-size: 50px;
 }
 .main-block .text h1 span#typing {
-  font-size: 50px;
-  border-bottom: 2px solid #262626;
+  font-size: 40px;
+  border-bottom: 2px solid #53c3ff;
 }
 .main-block .world-view {
   display: flex;
@@ -263,17 +263,114 @@ ul.menu .menu-block li a:hover {
   -ms-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
 }
+.main-block .world-view .view-modal a:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
 .main-block .world-view .view-modal a:nth-child(2) {
   margin-top: 20px;
 }
-.main-block .world-view .view-modal a:hover {
+
+:root {
+  --width: 100vw;
+  --angle: -10deg;
+  --magic-number: 0.19438;
+  --skew-padding: calc(var(--width) * var(--magic-number));
+}
+@media (min-width: 600px) {
+  :root {
+    --width: 300px;
+  }
+}
+
+:root {
+  --width: 100vw;
+  --full-width: 100vw;
+  --angle: -9deg;
+  --magic-number: 0.04719;
+  --skew-padding: calc(var(--width) * var(--magic-number));
+  --clip-padding: calc(var(--full-width) * var(--magic-number));
+}
+@media (min-width: 42em) {
+  :root {
+    --width: 42rem;
+  }
+}
+
+.diagonal-box {
+  position: relative;
+  padding: var(--skew-padding) 0;
+  margin-top: -1px;
+}
+.diagonal-box:before {
+  background: #53c3ff;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: skewy(var(--angle));
+  transform-origin: 50% 0;
+  outline: 1px solid transparent;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.diagonal-box .content {
+  max-width: var(--width);
+  margin: 0 auto;
+  padding: 1.5em;
+  position: relative;
+  /* -----------
+  enable the border to see, that the content
+  perfectly fits into the section withou
+  bleeding into the adjecting areas:
+  ------------ */
+}
+.diagonal-box .content h1 {
+  color: #262626;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 42rem;
+  line-height: 1.2;
+  transform: skewY(var(--angle));
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.diagonal-box .content .intro {
+  font-size: 1.25em;
+  transform: skewY(var(--angle));
+  margin: 0em auto 0em;
+  text-align: center;
+  color: #262626;
+  font-weight: normal;
+  padding: 0.5em;
+  text-transform: uppercase;
+}
+.diagonal-box .content .intro input {
+  color: #262626;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  background: #fff;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.diagonal-box .content .intro input:hover {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+.diagonal-box .content .intro input[type=submit] {
+  cursor: pointer;
 }
 
 .about {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 50px;
 }
 .about .logo {
   text-align: center;
@@ -956,7 +1053,7 @@ footer .footer .social a img {
 }
 
 .feed-form input {
-  height: 50px;
+  padding: 10px 20px 10px 20px;
   border-radius: 3px;
   border: 1px solid #000000;
   background-color: #fff;

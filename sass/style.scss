@@ -218,10 +218,10 @@ ul.menu{
         h1{
             color: #262626;
             font-weight: normal;
-            font-size: 60px;
+            font-size: 50px;
             span#typing{
-                font-size: 50px;
-                border-bottom: 2px solid #262626;
+                font-size: 40px;
+                border-bottom: 2px solid rgb(83, 195, 255);
             }
         }
     }
@@ -258,20 +258,217 @@ ul.menu{
                 -moz-transition: all 0.3s linear;
                 -ms-transition: all 0.3s linear;
                 -o-transition: all 0.3s linear;
-                &:nth-child(2){
-                    margin-top: 20px;
-                }
                 &:hover{
                     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
                 }
+                &:nth-child(2){
+                    margin-top: 20px;
+                }
             }
         }
+    }
+}
+:root {
+    --width: 100vw;
+    @media (min-width: 600px) {
+      --width: 300px;
+    }
+    --angle: -10deg;
+    --magic-number: 0.19438;
+    --skew-padding: calc(var(--width) * var(--magic-number));
+}
+// .consult{
+//     position: relative;
+//     padding: var(--skew-padding) 0;
+//     &::before{
+//         content: '';
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//         bottom: 0;
+//         left: 0;
+//         background: rgb(83, 195, 255);
+//         transform: skewy(var(--angle));
+//         transform-origin: 50% 0;
+//         backface-visibility: hidden;
+//     }
+//     .form{
+//         display: flex;
+//         flex-direction: row;
+//         position: relative;
+//         padding: 1em;
+//         max-width: var(--width);
+//         margin: 0 auto;
+//         form{
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             align-items: center;
+//             input{
+//                 color: #262626;
+//                 border: 1px solid #262626;
+//                 padding: 10px 20px 10px 20px;
+//                 border-radius: 3px;
+//                 background: #fff;
+//                 -webkit-border-radius: 3px;
+//                 -moz-border-radius: 3px;
+//                 -ms-border-radius: 3px;
+//                 -o-border-radius: 3px;
+//                 transition: all 0.3s linear;
+//                 -webkit-transition: all 0.3s linear;
+//                 -moz-transition: all 0.3s linear;
+//                 -ms-transition: all 0.3s linear;
+//                 -o-transition: all 0.3s linear;
+//                 &:hover{
+//                     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+//                 } 
+//             }
+//         }
+//         h2{
+//             font-weight: normal;
+//             margin-left: 20px;
+//         }
+//     }
+// }
+:root {
+    --width: 100vw;
+    --full-width: 100vw;
+    
+    @media (min-width: 42em) {
+      --width: 42rem;
+    }
+    
+    --angle: -9deg;
+    --magic-number: 0.04719;
+    --skew-padding: calc(var(--width) * var(--magic-number));
+    --clip-padding: calc(var(--full-width) * var(--magic-number));
+}
+.diagonal-box {
+    position: relative;
+    padding: var(--skew-padding) 0;
+    margin-top: -1px;
+    &:before {
+        background: rgb(83, 195, 255);
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        transform: skewy(var(--angle));
+        transform-origin: 50% 0;
+        outline: 1px solid transparent;
+        backface-visibility: hidden;
+    }
+    .content {
+        max-width: var(--width);
+        margin: 0 auto;
+        padding: 1.5em;
+        position: relative;
+        
+        /* -----------
+        enable the border to see, that the content
+        perfectly fits into the section withou
+        bleeding into the adjecting areas:
+        ------------ */
+        // border: 2px dashed #fff8;
+        h1 {
+            color: #262626;
+            text-align: center;
+            margin:0 auto;
+            padding: 0 1em;
+            max-width: 42rem;
+            line-height: 1.2;
+            transform: skewY(var(--angle));
+            font-size: 40px;
+            text-transform: uppercase;
+            font-weight: normal;
+        }
+        .intro {
+            font-size: 1.25em;
+            transform: skewY(var(--angle));
+            margin: 0em auto 0em;
+            text-align: center;
+            // background: #fff;
+            color: #262626;
+            font-weight: normal;
+            padding: 0.5em;
+            text-transform: uppercase;
+            input{
+                color: #262626;
+                border: none;
+                padding: 10px 20px 10px 20px;
+                background: #fff;
+                // border-radius: 3px;
+                // -webkit-border-radius: 3px;
+                // -moz-border-radius: 3px;
+                // -ms-border-radius: 3px;
+                // -o-border-radius: 3px;
+                transition: all 0.3s linear;
+                -webkit-transition: all 0.3s linear;
+                -moz-transition: all 0.3s linear;
+                -ms-transition: all 0.3s linear;
+                -o-transition: all 0.3s linear;
+                &:hover{
+                    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+                }
+                &[type="submit"]{
+                    cursor: pointer;
+                }
+            }
+            // a {
+            //   background-image: linear-gradient(transparent 90%, 0, #003 100%);
+            //   background-image: none;
+            //   border-bottom: 4px solid;
+            //   transition: none;
+              
+            //   &:hover {
+            //     border-color: #a06;
+            //     opacity: 1;
+            //   }
+            // }
+        }
+        // p {
+        //     font-size: 1.25em;
+        //     margin: 0;
+        //     line-height: 1.5;
+            
+        //     & + &,
+        //     svg + & {
+        //       margin-top: 1em;
+        //     }
+            
+        //     code {
+        //       background: #0033;
+        //       padding: 0.125em 0.375em;
+        //       border-radius: 0.125em;
+              
+        //       @media (min-width: 35em) {
+        //         white-space: nowrap;
+        //       }
+        //     }
+            
+        //     a {
+        //       color: inherit;
+        //       text-decoration: none;
+        //       background-image: linear-gradient(transparent 90%, 0, #fffa 100%);
+        //       padding: 0.125em 0;
+        //       //display: inline-block;
+        //       transition: opacity 0.3s ease-out;
+              
+        //         &:hover {
+        //             text-decoration: none;
+        //             opacity: 0.8;
+        //         }
+        //     }
+        // }
     }
 }
 .about{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 50px;
     .logo{
         text-align: center;
         font-size: 3em;
