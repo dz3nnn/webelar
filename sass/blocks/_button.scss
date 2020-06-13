@@ -8,8 +8,9 @@
     font-size: 18px;
     font-weight: 900;
     text-transform: uppercase;  
-    border: 1px solid #000000;  
-    border-radius: 3px;
+    // border: 1px solid #000000;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    // border-radius: 3px;
     cursor: pointer;
     transition: 0.5s all;
     &_submit {

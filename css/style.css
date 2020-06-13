@@ -248,20 +248,15 @@ ul.menu .menu-block li a:hover {
 .main-block .world-view .view-modal a {
   text-decoration: none;
   color: #262626;
-  border: 1px solid #262626;
   padding: 10px 20px 10px 20px;
   min-width: 183px;
   text-align: center;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 .main-block .world-view .view-modal a:hover {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
@@ -353,6 +348,7 @@ ul.menu .menu-block li a:hover {
   border: none;
   padding: 10px 20px 10px 20px;
   background: #fff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -364,6 +360,9 @@ ul.menu .menu-block li a:hover {
 }
 .diagonal-box .content .intro input[type=submit] {
   cursor: pointer;
+}
+.diagonal-box .content .intro input:focus {
+  outline: none;
 }
 
 .about {
@@ -484,13 +483,8 @@ ul.menu .menu-block li a:hover {
 .services .products .product .more-info a {
   text-decoration: none;
   color: #262626;
-  border: 1px solid #262626;
   padding: 10px 20px 10px 20px;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -931,13 +925,8 @@ footer .footer .social a img {
 #modal-landing-page .popup .write-message a, #modal-online-shop .popup .write-message a, #modal-corporate .popup .write-message a, #modal-consult .popup .write-message a {
   text-decoration: none;
   color: #262626;
-  border: 1px solid #262626;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   padding: 10px 20px 10px 20px;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -995,8 +984,7 @@ footer .footer .social a img {
   font-size: 18px;
   font-weight: 900;
   text-transform: uppercase;
-  border: 1px solid #000000;
-  border-radius: 3px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   transition: 0.5s all;
 }
@@ -1047,22 +1035,27 @@ footer .footer .social a img {
   margin-top: 26px;
   display: flex;
   flex-direction: column;
+  width: 300px;
 }
 .feed-form_mt25 {
   margin-top: 25px;
 }
 
 .feed-form input {
-  padding: 10px 20px 10px 20px;
+  height: 50px;
   border-radius: 3px;
-  border: 1px solid #000000;
+  border: none;
   background-color: #fff;
   margin-bottom: 15px;
   padding: 0 20px;
   color: #4b4b4b;
   font-size: 14px;
   font-weight: 300;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 .feed-form input:nth-child(3) {
   margin-bottom: 20px;
+}
+.feed-form input:focus {
+  outline: none;
 }
