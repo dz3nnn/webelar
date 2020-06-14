@@ -11,15 +11,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <!--???-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
 </head>
 
 <body class="">
     <script type="text/javascript">
         $(window).on('load', function () {
             var $preloader = $('#page-preloader'),
-                $loader = $preloader.find('.loader');
+            $loader = $preloader.find('.loader');
             $loader.fadeOut(3000);
             $preloader.delay(350).fadeOut(2000);
+            $("#typing").typed({
+                strings: [" разработать веб-сайт", " сделать SEO продвижение", " настроить рекламу"],
+                typeSpeed: 70,
+                backDelay: 1500,
+                startDelay: 2500,
+                loop: true,
+                loopCount: 99,
+                contentType: 'html',
+            });
         });
     </script>
     <div id="page-preloader" class='preloader'>
@@ -353,20 +363,11 @@
     </div>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
-    <script>
+    <!-- <script>
         $(function () {
-            $("#typing").typed({
-                strings: [" разработать веб-сайт", " сделать SEO продвижение", " настроить рекламу"],
-                typeSpeed: 70,
-                backDelay: 1500,
-                startDelay: 2500,
-                loop: true,
-                loopCount: 2,
-                contentType: 'html',
-            });
+            
         });
-    </script>
+    </script> -->
     <script src="https://kit.fontawesome.com/b8c5f825e0.js" crossorigin="anonymous"></script>
     <script src="js/fm.revealator.jquery.min.js"></script>
     <script src="js/swiper.min.js"></script>

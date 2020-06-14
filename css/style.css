@@ -476,6 +476,7 @@ ul.menu .menu-block li a:hover {
 
 @media (max-width: 950px) {
   .services .products .product {
+    margin-top: 25px;
     width: 100%;
   }
 }
